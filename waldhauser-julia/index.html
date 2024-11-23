@@ -6,71 +6,81 @@
   <style>
     /* General Styling */
     body {
-      font-family: 'Times New Roman', serif; /* Elegant Times New Roman font */
-      line-height: 1.8;
+      font-family: 'Arial', sans-serif; /* Clean and modern font */
+      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f7f3e9; /* Light beige background */
-      color: #3e3e3e; /* Dark gray for professional text color */
+      background-color: #f9f9f9; /* Light neutral background */
+      color: #333333; /* Neutral dark gray for text */
     }
     header {
-      background: #e8dfd0; /* Muted beige background for the header */
-      color: #3e3e3e; /* Dark gray text */
-      padding: 2em 0;
+      background: linear-gradient(135deg, #6c63ff, #8c82f5); /* Gradient for header */
+      color: #ffffff; /* White text */
+      padding: 2.5em 0;
       text-align: center;
-      border-bottom: 4px solid #c2b8a3; /* Subtle accent border */
+      border-bottom: 5px solid #5044d4; /* Accent border */
     }
     header h1 {
       margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 1px;
+      font-size: 2.8em;
+      letter-spacing: 1.2px;
+      font-weight: bold;
     }
     main {
       padding: 2em;
+      max-width: 1200px;
+      margin: 0 auto;
     }
-    /* Flexbox layout for image and content */
     .content-wrapper {
       display: flex;
+      flex-wrap: wrap; /* Adjust for smaller screens */
+      gap: 2em; /* Consistent spacing */
       align-items: flex-start;
-      gap: 2em; /* Space between image and text */
     }
     img {
-      max-width: 180px; /* Contain image size */
-      height: auto; /* Maintain aspect ratio */
-      border-radius: 10px; /* Rounded corners for subtle elegance */
-      border: 3px solid #c2b8a3; /* Thin beige border */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gentle shadow */
+      max-width: 180px;
+      height: auto;
+      border-radius: 50%; /* Circular image for a polished look */
+      border: 4px solid #5044d4; /* Accent border matching header */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
     }
     section {
-      margin-bottom: 2em;
-      background: #f0ede8; /* Softer beige for section backgrounds */
+      background: #ffffff; /* Crisp white for content sections */
       padding: 1.5em;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-      border: 2px solid #e8dfd0; /* Subtle beige border */
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Modern shadow for depth */
+      flex: 1; /* Flexible width for sections */
+      min-width: 280px; /* Minimum width for smaller screens */
     }
     h2 {
-      color: #3e3e3e; /* Dark gray for headings */
-      font-size: 1.8em;
+      color: #5044d4; /* Vibrant heading color */
+      font-size: 1.6em;
       margin-bottom: 0.8em;
-      border-bottom: 2px solid #c2b8a3; /* Underline for structure */
+      border-bottom: 2px solid #d9d9f2; /* Subtle underline */
       padding-bottom: 0.2em;
     }
     ul {
       padding: 0;
-      list-style: none; /* No bullets for a clean look */
+      list-style: none; /* No bullets */
     }
     ul li {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.8em;
       font-size: 1.1em;
     }
     a {
-      color: #6a5d4d; /* Neutral beige for links */
+      color: #5044d4; /* Accent link color */
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500; /* Semi-bold for emphasis */
+      transition: color 0.3s ease;
     }
     a:hover {
-      text-decoration: underline;
+      color: #6c63ff; /* Hover effect */
+    }
+    footer {
+      text-align: center;
+      margin-top: 3em;
+      color: #888888;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -79,11 +89,8 @@
     <h1>Julia Waldhauser</h1>
   </header>
   <main>
-    <!-- Flexbox layout for image and content -->
     <div class="content-wrapper">
-      <!-- Photo -->
       <img src="Foto.jpg" alt="Photo of Julia Waldhauser">
-      <!-- Main content -->
       <div>
         <section aria-labelledby="contact-heading">
           <h2 id="contact-heading">Contact</h2>
@@ -119,5 +126,8 @@
       </div>
     </div>
   </main>
+  <footer>
+    &copy; 2024 Julia Waldhauser
+  </footer>
 </body>
 </html>
