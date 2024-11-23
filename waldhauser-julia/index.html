@@ -6,7 +6,7 @@
   <style>
     /* General Styling */
     body {
-      font-family: 'Georgia', serif; /* Elegant serif font */
+      font-family: 'Times New Roman', serif; /* Elegant Times New Roman font */
       line-height: 1.8;
       margin: 0;
       padding: 0;
@@ -43,7 +43,130 @@
     }
     section {
       margin-bottom: 2em;
-      background: #fff; /* Clean white background for sections */
+      background: #f0ede8; /* Softer beige for section backgrounds */
+      padding: 1.5em;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+      border: 2px solid #e8dfd0; /* Subtle beige border */
+    }
+    h2 {
+      color: #3e3e3e; /* Dark gray for headings */
+      font-size: 1.8em;
+      margin-bottom: 0.8em;
+      border-bottom: 2px solid #c2b8a3; /* Underline for structure */
+      padding-bottom: 0.2em;
+    }
+    ul {
+      padding: 0;
+      list-style: none; /* No bullets for a clean look */
+    }
+    ul li {
+      margin-bottom: 0.5em;
+      font-size: 1.1em;
+    }
+    a {
+      color: #6a5d4d; /* Neutral beige for links */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Julia Waldhauser</h1>
+  </header>
+  <main>
+    <!-- Flexbox layout for image and content -->
+    <div class="content-wrapper">
+      <!-- Photo -->
+      <img src="Bewerbungsfoto.jpg" alt="Photo of Julia Waldhauser">
+      <!-- Main content -->
+      <div>
+        <section aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <ul>
+            <li>📞 <a href="tel:+436504277720">+43 650 4277720</a></li>
+            <li>📧 <a href="mailto:julia.waldhauser@gmail.com">julia.waldhauser@gmail.com</a></li>
+            <li>📍 <a href="https://www.google.com/maps/place/Sparbersbachgasse+11%2F2,+8010+Graz" target="_blank">Sparbersbachgasse 11/2, 8010 Graz</a></li>
+            <li>🎂 13.12.1997</li>
+          </ul>
+        </section>
+        <section aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <ul>
+            <li>👩‍🎓 <a href="https://www.uni-graz.at/en/" target="_blank">University of Graz</a> – English Studies</li>
+            <li>🏫 <a href="https://www.chs-villach.at" target="_blank">Centrum Humanberuflicher Schulen Villach</a></li>
+            <li>🏫 <a href="https://nms-velden.jimdoweb.com" target="_blank">Secondary school Velden am Wörthersee</a></li>
+            <li>🏫 <a href="https://vs-lind.jimdosite.com" target="_blank">Primary school Lind ob Velden</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="work-heading">
+          <h2 id="work-heading">Work Experience</h2>
+          <ul>
+            <li>👩‍💻 <a href="https://www.5min.at" target="_blank">5 Minuten</a> – Online Editor</li>
+          </ul>
+        </section>
+        <section aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading">Hobbies</h2>
+          <ul>
+            <li>📚 Reading</li>
+            <li>🎧 Listening to podcasts</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Julia Waldhauser’s Card</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Times New Roman', serif; /* Elegant Times New Roman font */
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f3e9; /* Light beige background */
+      color: #3e3e3e; /* Dark gray for professional text color */
+    }
+    header {
+      background: #e8dfd0; /* Muted beige background for the header */
+      color: #3e3e3e; /* Dark gray text */
+      padding: 2em 0;
+      text-align: center;
+      border-bottom: 4px solid #c2b8a3; /* Subtle accent border */
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    main {
+      padding: 2em;
+    }
+    /* Flexbox layout for image and content */
+    .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 2em; /* Space between image and text */
+    }
+    img {
+      max-width: 180px; /* Contain image size */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Rounded corners for subtle elegance */
+      border: 3px solid #c2b8a3; /* Thin beige border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gentle shadow */
+    }
+    section {
+      margin-bottom: 2em;
+      background: #f0ede8; /* Softer beige for section backgrounds */
       padding: 1.5em;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
