@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Julia Waldhauser’s Card</title>
   <style>
-    /* Styling */
+    /* General Styling */
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -25,12 +25,90 @@
     main {
       padding: 1em;
     }
+    /* Flexbox layout for image and content */
     .content-wrapper {
       display: flex;
       align-items: flex-start;
+      gap: 1em; /* Space between image and text */
     }
     img {
-      max-width: 150px; /* Limit the size of the photo */
-      margin-right: 1em; /* Add spacing between the image and text */
-      border-radius: 10px; /* Optional: Add rounded corners */
-      box-shadow: 0 2px 5px rgba
+      max-width: 150px; /* Set image size */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    }
+    section {
+      margin-bottom: 1.5em;
+      background: #fff;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Julia Waldhauser</h1>
+  </header>
+  <main>
+    <!-- Flexbox layout for image and content -->
+    <div class="content-wrapper">
+      <!-- Photo -->
+      <img src="Bewerbungsfoto.jpg" alt="Photo of Julia Waldhauser">
+      <!-- Main content -->
+      <div>
+        <section aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Contact</h2>
+          <ul>
+            <li>📞 <a href="tel:+436504277720">+43 650 4277720</a></li>
+            <li>📧 <a href="mailto:julia.waldhauser@gmail.com">julia.waldhauser@gmail.com</a></li>
+            <li>📍 <a href="https://www.google.com/maps/place/Sparbersbachgasse+11%2F2,+8010+Graz" target="_blank">Sparbersbachgasse 11/2, 8010 Graz</a></li>
+            <li>🎂 13.12.1997</li>
+          </ul>
+        </section>
+        <section aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <ul>
+            <li>👩‍🎓 <a href="https://www.uni-graz.at/en/" target="_blank">University of Graz</a> – English Studies</li>
+            <li>🏫 <a href="https://www.chs-villach.at" target="_blank">Centrum Humanberuflicher Schulen Villach</a></li>
+            <li>🏫 <a href="https://nms-velden.jimdoweb.com" target="_blank">Secondary school Velden am Wörthersee</a></li>
+            <li>🏫 <a href="https://vs-lind.jimdosite.com" target="_blank">Primary school Lind ob Velden</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="work-heading">
+          <h2 id="work-heading">Work Experience</h2>
+          <ul>
+            <li>👩‍💻 <a href="https://www.5min.at" target="_blank">5 Minuten</a> – Online Editor</li>
+          </ul>
+        </section>
+        <section aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading">Hobbies</h2>
+          <ul>
+            <li>📚 Reading</li>
+            <li>🎧 Listening to podcasts</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
