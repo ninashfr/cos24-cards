@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
-    <style>
-      /* Styling */
-    </style>
-  </head>
-  </head>
-  <body>
-    <header>
-      <h1>Julia</h1>
-    </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
-      </section>
-    </main>
-    <script>
-      /* Scripting */
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Julia Waldhauser’s Card</title>
+  <style>
+    /* Styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      padding: 1em;
+    }
+    section {
+      margin-bottom: 1.5em;
+      background: #fff;
+      padding: 1em;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Julia Waldhauser</h1>
+  </header>
+  <main>
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul>
+        <li>📞 +43 650 4277720</li>
+        <li>📧 julia.waldhauser@gmail.com</li>
+        <li>📍 Sparbersbachgasse 11/2, 8010 Graz</li>
+        <li>🎂 13.12.1997</li>
+      </ul>
+    </section>
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul>
+        <li><strong>2017 – 2023:</strong> Karl-Franzens-Universität Graz – Anglistik und Germanistik Bachelorstudium (Schwerpunkt: Linguistik)</li>
+        <li><strong>2012 – 2017:</strong> Centrum Humanberuflicher Schulen Villach (Schwerpunkt: Internationale Kommunikation)</li>
+        <li><strong>2008 – 2012:</strong> Hauptschule Velden am Wörthersee</li>
+        <li><strong>2004 – 2008:</strong> Volksschule Lind ob Velden</li>
+      </ul>
+    </section>
+    <section aria-labelledby="work-heading">
+      <h2 id="work-heading">Work Experience</h2>
+      <ul>
+        <li><strong>2023:</strong> 5 Minuten – Online-Redakteurin</li>
+      </ul>
+    </section>
+    <section aria-labelledby="hobbies-heading">
+      <h2 id="hobbies-heading">Hobbies</h2>
+      <ul>
+        <li>● Reading</li>
+        <li>● Listening to podcasts</li>
+      </ul>
+    </section>
+  </main>
+</body>
 </html>
