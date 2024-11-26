@@ -2,28 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <title>Elena’s Card</title>
     <style>
-      /* Styling */
-    </style>
-  </head>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff; /* Light blue background */
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+     }
+     header {
+       background-color: #4CAF50; /* Green background */
+       color: white; /* White text */
+       padding: 1rem;
+       text-align: center;
+     }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+  </style>
   </head>
   <body>
     <header>
-      <h1>@@MyName</h1>
+      <h1>Elena</h1>
     </header>
     <main>
       <section aria-labelledby="bio-heading">
         <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+        <p>I am from Russia. I have three Master's degrees in:</p>
+        <ul>
+          <li>Linguistics</li>
+          <li>Computer Science</li>
+          <li>Technical Communication</li>
+        </ul>
       </section>
       <section aria-labelledby="hobbies-heading">
         <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <p>These are my hobbies in the prioritized order:</p>
+        <ol>
+          <li>Reading</li>
+          <li>Art</li>
+          <li>Travelling</li>
+        </ol>
       </section>
       <section aria-labelledby="workxp-heading">
         <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <p>I have been working for 20 years as a technical writer in the HPC domain. 5 years ago I moved to a manager's role.</p>
       </section>
     </main>
     <script>
