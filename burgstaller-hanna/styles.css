@@ -1,31 +1,17 @@
-body {
+<style>
+  body {
     font-family: 'Instrument Serif', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
+  }
 
-
-h1 {
+  h1 {
     font-family: 'Instrument Serif', serif;
-    font size: 300px; ;
-    color: #da2424;
-    text-align: center;
-    margin: 20px 0;
-    text-transform: uppercase;
-}
+  }
 
+  .about {
+    font-family: 'Instrument Serif', serif;
+  }
 
-.instrument-serif-regular {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.instrument-serif-regular-italic {
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
-  font-style: italic;
-}
+  .contact, .socials {
+    font-family: 'Instrument Serif', serif;
+  }
+</style>
