@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Card</title>
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <meta charset="utf-8">
-    <title>Esra Tüzü’s Card</title>
-    <style>
-      /* Styling */
-      *{padding: 0; margin: 0; box-sizing: border-box;}
-body{height: 900px;}
-header {
-  background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
-  text-align: center;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0 0 85% 85% / 30%;
-}
-header .overlay{
-  width: 100%;
-  height: 100%;
-  padding: 50px;
-  color: #FFF;
-  text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
-  
-}
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 80px;
-  margin-bottom: 30px;
-}
+    .container {
+      width: 90%;
+      max-width: 600px;
+      border: 1px solid #fff;
+      padding: 20px;
+      text-align: center;
+    }
 
-h3, p {
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 30px;
-}
+    /* Styling the profile picture */
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      margin-bottom: 20px;
+    }
 
-button {
-  border: none;
-  outline: none;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: #333;
-  background: #fff;
-  margin-bottom: 50px;
-  box-shadow: 0 3px 20px 0 #0000003b;
-}
-button:hover{
-  cursor: pointer;
-}
-    </style>
-    <style>
-      /* Styling */
-    
+    /* Styling name and headings */
+    .name {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
 
-      .element {
-    width: 500px;
-    height: 402px;
-    background-color: rgba(255, 255, 255, 1);
-    color: #000;
-    border-radius: 67px;
-    box-shadow: 0px 0px 17px 2px rgba(47,16,224,1),
-8px 8px 0px 0px rgba(218,102,123,1);
-  }
-      
- </style>
- 
-  </head>
-  <body>
-    <header>
-      <h1>Esra Tüzü</h1>
-    </header>
-    <main>
-      <img src="DSCF3240.JPG"  alt=“Esra Tüzü mirror selfie”>
-     <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Contact</h2>
-       <p> <strong>📧Email:</strong> esratuzu@gmail.com </p>
-            <p> <strong> 📞Phone:</strong> +43067762409535 </p>
-                    <p> <strong>🏠Address:</strong> Kapaunplatz 1, Graz, 8010 Austria. </p>
-     </section>
+    .section {
+      margin: 20px 0;
+    }
 
-    
-     
-<section aria-labelledby="Education">
-        <h2 id="Education">Education</h2>
-               <p> <strong>FH JOANNEUM University of Applied Sciences - Dept. of Media & Design</strong> </p>
-               <p>Content Strategy (MA)</p>
-               <p> <strong>Ankara University - Faculty of Language, History and Geography</strong> </p>
-<p>Japanese Language and Literature(BA)</p>
-      </section>
-    
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        <p> <strong>LOGO Jugendmanagement</strong> </p>
-         <p>Social Media Manager</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-                      <p> <strong>🏺Handmade Ceramics</strong> </p>
-                              <p> <strong>💃Dancing</strong> </p>
-         <p> <strong>🌍Traveling</strong> </p>
- <p> <strong>📸Photography</strong> </p>
-      </section>
-   
-              
+    .section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5px;
+    }
 
-    </main>
-    <script>
-      /* Scripting */
-    </script>
-  </body>
+    .section p, .section ul {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    /* Styling links */
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      transition: color 0.3s, border-bottom-color 0.3s;
+    }
+
+    a:hover {
+      color: #ccc;
+      border-bottom-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="EsraTuezue.JPG" alt="Profile Picture" class="profile-picture">
+    <div class="name">Esra Tüzü</div>
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: esratuzu@gmail.com</p>
+      <p>Phone: +43067762409535</p>
+    </div>
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Photography</li>
+        <li>Digital Marketing</li>
+        <li>Social Media Managing</li>
+        <li>Technical SEO</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Work Experience</h2>
+      <p><strong>Social Media Manager</strong> - LOGO jugendmanagement</p>
+      <p>2023 - 2024</p>
+      <p>Description of responsibilities and achievements.</p>
+      <br>
+      <p><strong>Job Title 2</strong> - Company Name</p>
+      <p>From Date - To Date</p>
+      <p>Description of responsibilities and achievements.</p>
+    </div>
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>Content Strategy (MA)</strong> </p>
+        <p>FH JOANNEUM - University of Applied Sciences - Dept. of Media & Design</p>
+      <p><strong>Japanese Language & Literature (BA)</strong> </p> 
+        <p>University - Faculty of Language, History and Geography</p>
+
+    </div>
+  </div>
+</body>
 </html>
