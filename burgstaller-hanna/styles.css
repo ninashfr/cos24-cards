@@ -1,19 +1,61 @@
-
-  body {
+/* General styles */
+body {
     font-family: 'Instrument Serif', serif;
-  }
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
 
-  h1 {
+
+h1 {
     font-family: 'Instrument Serif', serif;
-    font-size: 35px;
+    font-size: 45px;
+    line-height: 55px;
     font-weight: normal;
+ 
+}
+
+
+a:link {
+    font-style: italic;
+
   }
+
+
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+  
+  }
+
 
   .about {
-    font-family: 'Instrument Serif', serif;
-  }
+    max-width: 800px;
+    margin: auto;
+    padding: 20px; }
 
-  .contact, .socials {
-    font-family: 'Instrument Serif', serif;
-  }
+ .contact {
+     background-color: blue;
+     margin: auto;
+    padding: 20px; }
 
+.contact a {
+    display: inline-block;
+    padding: 15px 30px; /* Larger padding for a bigger button */
+    color: white;
+    background-color: rgb(241, 94, 22);
+    text-decoration: none;
+    border-radius: 50px; /* Keeps the button round */
+    font-size: 20px; /* Larger font size for better visibility */
+    transition: background-color 0.3s ease;
+}
+    
