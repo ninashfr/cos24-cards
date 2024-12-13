@@ -1,11 +1,12 @@
-<style>
+
   body {
     font-family: 'Instrument Serif', serif;
   }
 
   h1 {
     font-family: 'Instrument Serif', serif;
-    font-size: 30 px;
+    font-size: 30px;
+    font-weight: normal;
   }
 
   .about {
@@ -15,4 +16,4 @@
   .contact, .socials {
     font-family: 'Instrument Serif', serif;
   }
-</style>
+
